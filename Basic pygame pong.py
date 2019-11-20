@@ -1,5 +1,4 @@
-# Overall game setup and pygame template
-# https://www.youtube.com/watch?v=uWvb3QzA48c&t=53s
+# Simple pong using python 3 and pygame
 
 import pygame
 import random
