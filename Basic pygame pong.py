@@ -1,4 +1,5 @@
 # Simple pong using python 3 and pygame
+# Added start screen and game over/continue screen
 
 import pygame
 import random
@@ -31,12 +32,12 @@ class Player(pygame.sprite.Sprite):
     def update(self):
        
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_DOWN] and self.xpos > 700:
+        if keys[pygame.K_DOWN] and self.xpos > 700: # Player 2
             self.pos.y += 50
         if keys[pygame.K_UP] and self.xpos > 700:
             self.pos.y -= 50
 
-        if keys[pygame.K_s] and self.xpos < 100:
+        if keys[pygame.K_s] and self.xpos < 100: # Player 1
             self.pos.y += 50
         if keys[pygame.K_w] and self.xpos < 100:
             self.pos.y -= 50
